@@ -1,5 +1,7 @@
 var http=require("http");
 http.createServer(function(req,res){
     res.writeHead(200,{'content-type':'text/html'});
-    res.end("welcome in it park");
+    res.write("welcome in it park");
+    res.write("hello");
+
 }).listen(8080);
